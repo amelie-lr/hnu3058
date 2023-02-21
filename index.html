@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Ma page web</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Amélie Levasseur-R.">
+        <meta name="keywords" content="html, css, HNU3058">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="roboto.css" />
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1><strong>Amélie</strong> Levasseur-Raymond</h1>
+            <p>Future archiviste&nbsp;&nbsp;\\\&nbsp;&nbsp;Ancienne infographiste</p>
+            <section class="openclose">
+                <button onclick="openDetails()">Tout développer</button>
+                <button onclick="closeDetails()">Tout refermer</button>
+            </section>
+        </header>
+
+        <section class="mosaic beige" style="padding-top: 4vw;">
+        <div style="background-image: url(images/texture.png);">
+            <img class="centre" src="images/logo_pos_blanc_transp_mauve.png">
+        </div>
+        <div class="double blanc">
+            <h3>Bienvenue!</h3>
+            <p>Cette page est développée dans le cadre du cours <i>HNU3058 - Atelier d'introduction aux technologies du web</i> à titre d'exercice pratique des langages HTML et CSS.</p>
+            <p>Ayant déjà une certaine expérience en production de site web, j'ai donc profité de l'occasion pour retravailler la maquette de <a href="http://www.amelielr.ca" target="_blank"> mon site personnel</a>, précédemment basé sur Drupal, dont certaines fonctionnalités sont malheureusement brisées depuis quelques années. Étant donné ma réorientation de carrière, une refonte de mon site était déjà dans les plans. </p>
+            <p>La page est bien évidemment en développement et incomplète en attendant de revoir les contenus. J'ai ici plutôt porter mon attention à la recherche de style, de structure et de fonctionnalités avec mes nouveaux acquis.</p>
+            <p><b>Prochaine étape :</b> faire en sorte que le nombre de blocs affichés dans la mosaïque (1, 2, 3 ou 4 blocs de large) s'adapte selon la largeur de l'écran.</p>
+        </div>
+        </section>
+        
+        <details class="mauvepale">
+        <summary>Apprendre<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
+        <section class="mosaic">
+        <div class="mauvepale">
+            <h4>septembre 2022 à ...</h4>
+            <h5>Mineure en humanités numériques, Université de Montréal</h5>
+            <ul>
+                <li>HN : Théories</li>
+                <li>HN : Technologies</li>
+                <li>HN : Laboratoire</li>
+                <li>Histoire numérique</li>
+                <li>Initiation à la programmation en sciences sociales</li>
+                <li>Pratiques de l'édition numérique</li>
+                <li>Initiation aux bases de données</li>
+            </ul>
+        </div>
+
+        <div class="mauve double">
+            <h4>septembre 2021 à avril 2022</h4>
+            <h5>Certificat en archivistique, École de bibliothéconomie et des sciences de l’information, Université de Montréal</h5>
+            <ul>
+                <li>Introduction à l’archivistique</li>
+                <li>Typologie des archives</li>
+                <li>Classification des archives</li>
+                <li>Description des archives</li>
+                <li>Préservation des archives</li>
+                <li>Évaluation des archives</li>
+                <li>Administration des archives</li>
+                <li>Gestion archives numériques</li>
+                <li>Diffusion, communication, exploitation</li>
+                <li>Aspects juridiques des archives et de l’information</li>
+            </ul>
+        </div>
+
+        <div class="carton">
+            <h4>2000-2003</h4>
+            <h5>DEC en infographie en préimpression, option conception typographique, Collège Ahuntsic</h5>
+            <p>Texte</p>
+        </div>
+
+        <div class="beige">
+            <h4>1995-2000</h4>
+            <h5>École d'éducation internationale, Saint-Hubert</h5>
+            <p>Texte</p>
+        </div>
+    </section>
+    </details>
+
+
+        <details class="mauve">
+        <summary>Travailler<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
+        <section class="mosaic">
+        <div class="beige">
+            <h4>juillet 2022 à ...</h4>
+            <h5>Poste d'étudiante en archivistique au Ministère des Transports et de la Mobilité durable du Québec, Montréal</h5>
+            <p>Description...</p>
+        </div>
+
+        <div style="background-image: url(images/bg_polygone22.png);">
+            
+            <p style="text-align: center;"><img src="images/icone_aaq.png"><br/><br/>
+            Membre étudiant et nouvellement diplômé de l’Association des archivistes du Québec</p>
+        </div>
+        
+        <div class="mauvepale">
+            <h4>février 2018 à mars 2020</h4>
+            <h5>Infographiste et chargée de projets chez Colpron, Saint-Lambert</h5>
+            <p>Description...</p>
+        </div>
+            
+        <div class="mauve">
+            <h4>octobre 2005 à juillet 2017</h4>
+            <h5>Infographiste en chef / intégrateur web à&nbsp;TM design, Montréal</h5>
+            <p>Mise en page, préparation de pages maquettes et feuilles de style, correction de texte, préimpression, vérification des bleus et épreuves couleurs, contrôle de qualité, suivi de projet, lecture d’épreuve, archivage, découpage et intégration de contenu de sites Web, programmation HTML et CSS, formation client pour la mise à jour de leur site Drupal, soutien technique, responsable du parc informatique.</p>
+        </div>
+        </section>
+    </details>
+
+        <details class="turquoise">
+            <summary>Contribuer<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
+            <section class="mosaic">
+                <div class="carton">
+                <h4>depuis 2019</h4>
+                <h5>Salon du vélo de Montréal</h5>
+                <p>Description...</p>
+            </div>
+            
+            <div class="turquoise">
+                <h4>depuis 2021</h4>
+                <h5>Fondation Charles-Bruneau</h5>
+                <p>Description...</p>
+            </div>
+                
+            <div class="blanc">
+                <h4>depuis 2016</h4>
+                <h5>Grand Défi Pierre Lavoie</h5>
+                <p>Description...</p>
+            </div>
+            </section>
+        </details>
+
+
+
+        <details class="beige">
+            <summary>Maitriser<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
+            <section class="mosaic">
+                <div class="mauvepale double">
+                <h3>Technologies</h3>
+                <section class="col3">
+                <h4>Archivistique</h4>
+                <dl class="competences">
+                    <dt>Content Server</dt><dd><span>\\\\\\</span>\\\\</dd>
+                    <dt>AtoM</dt><dd><span>\\\\</span>\\\\\\</dd>
+                </dl>
+                <h4>Bureautique</h4>
+                <dl class="competences">
+                    <dt>Word</dt><dd><span>\\\\\\\\</span>\\</dd>
+                    <dt>PowerPoint</dt><dd><span>\\\\\\\\</span>\\</dd>
+                    <dt>Excel</dt><dd><span>\\\\\\\</span>\\\</dd>
+                    <dt>Teams</dt><dd><span>\\\\\</span>\\\\\</dd>
+                </dl>
+                </section>
+                <section class="col3">
+                <h4>Web</h4>
+                <dl class="competences">
+                    <dt>WordPress</dt><dd><span>\\\\\</span>\\\\\</dd>
+                    <dt>Drupal</dt><dd><span>\\\\\</span>\\\\\</dd>
+                    <dt>Mailchimp</dt><dd><span>\\\\\\</span>\\\\</dd>
+                </dl>
+                <h4>Design</h4>
+                <dl class="competences">
+                    <dt>InDesign</dt><dd><span>\\\\\\\\</span>\\</dd>
+                    <dt>Illustrator</dt><dd><span>\\\\\\\</span>\\\</dd>
+                    <dt>Photoshop</dt><dd><span>\\\\\\</span>\\\\</dd>
+                    <dt>Acrobat</dt><dd><span>\\\\\\\</span>\\\</dd>
+                </dl>
+                </section>
+                <section class="col3">
+                    <h4>Langages</h4>
+                    <ul>
+                        <li>HTML et CSS</li>
+                        <li>Markdown</li>
+                        <li>R</li>
+                        <li>Python</li>
+                        <li>JSON</li>
+                        <li>BibTex</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <div class="carton">
+                <h3>Être</h3>
+                <img class="full" src="images/etre.png">
+            </div>
+                
+            </section>
+        </details>
+
+    
+        
+      
+        <footer>
+            2023&nbsp;&nbsp;\\\&nbsp;&nbsp;Amélie Levasseur-R.
+        </footer>
+        
+    </body>
+</html>
