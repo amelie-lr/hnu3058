@@ -7,12 +7,7 @@
     --turquoise: #afcbb7/*#9bbea5*/;
     --beige: #dfdad2;
     --white: #ffffff;
-    --col: 3;
-    --divwidth: (100% - (0.75% * 2 * var(--col))) / var(--col);
-    --doublewidth: 2 * (var(--divwidth) + 0.75%);
-    --ratio: 2.0471; /* 1=0.5 , 2=2.0309 , 3=2.0471 , 4=2.0638 , 5=2.0811  */
-    --base: 1vw;
-}
+  }
 
 
 /* bases */
@@ -33,7 +28,6 @@ header {
     top: 0;
     left: 0;
     box-sizing: border-box;
-    width: 100%;
     height: 10vw;
     padding: 2vw calc(5% + 0.75vw);
     background-color: var(--mauve);
@@ -51,16 +45,9 @@ header p {
     grid-column: 1 / span 8;
     grid-row: 2;
 }
-#openclose {
-    grid-column: 9 / span 4;
-    grid-row: 1 / span 1;
-}
-#openclose button {
-    width: 47%;
-}
-header #col {
-    grid-column: 9 / span 4;
-    grid-row: 2 / span 1;
+header .openclose {
+    grid-column: 11 / span 2;
+    grid-row: 1 / span 2;
 }
 header + section {
     margin-top: 10vw;
@@ -74,7 +61,7 @@ footer {
     padding: 2vw;
     text-align: center;
     color: var(--white);
-    font-size: var(--base);
+    font-size: 1vw;
 }
 
 /* structure */
@@ -87,24 +74,24 @@ section {
     overflow: auto;
 }
 .mosaic {
-    padding: 0 5% calc(4 * var(--base));
+    padding: 0 5% 4vw;
 }
 div {
-    width: calc(var(--divwidth));
+    width: 18.7%;
     aspect-ratio: 1 / 1;
     box-sizing: border-box;
     display: block;
     position: relative;
     float: left;
-    margin: 0.75%;
-    padding: calc(2.5 * var(--base));
+    margin: 0.65%;
+    padding: 2.5vw;
     overflow-y: hidden;
     border-radius: 2vw;
     background-size: cover;
 }
 .double {
-    width: calc(var(--doublewidth));
-    aspect-ratio: var(--ratio);
+    width: 38.7%;
+    aspect-ratio: 2 / 0.966;
 }
 .mosaic div > img.centre,
 .mosaic div > img.full {
@@ -191,7 +178,7 @@ div.turquoise {
 /* typographie */
 
 button {
-    font-size: var(--base);
+    font-size: 1vw;
 }
 a {
     color: inherit;
@@ -205,7 +192,7 @@ h3 {
 }
 
 h1 {
-    font-size: calc(3 * var(--base));
+    font-size: 3vw;
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -224,33 +211,33 @@ summary {
     overflow: hidden;
 }
 h3 {
-    font-size: calc(1.75 * var(--base));
+    font-size: 1.75vw;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 calc(2 * var(--base));    
+    margin: 0 0 2vw;    
 }
 h4 {
-    font-size: calc(1.1 * var(--base));
+    font-size: 1.1vw;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 0 calc(0.5 * var(--base));
+    margin: 0 0 0.5vw;
 }
 dl + h4 {
-    margin-top: calc(2 * var(--base));
+    margin-top: 2vw;
 }
 h5 {
-    margin: var(--base) 0;
+    margin: 1vw 0;
 }
 h5, 
 p, 
 li, 
 dt, 
 dd {
-    font-size: calc(1.25 * var(--base));
+    font-size: 1.25vw;
 }
 div p {
-    margin: var(--base) 0;
+    margin: 1vw 0;
 }
 div ul {
     padding-left: 0;
@@ -260,7 +247,7 @@ div ul > li::marker {
     content: "\2013  ";
 }
 div ul > li {
-    margin-left: calc(1.1 * var(--base));
+    margin-left: 1.1vw;
 }
 
 
@@ -269,8 +256,8 @@ div ul > li {
 dl.competences {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 0 var(--base);
-    margin: calc(0.5 * var(--base)) 0 0;
+    gap: 0 1vw;
+    margin: 0.5vw 0 0;
 }
 dl.competences > dt {
     grid-column: 1 / span 1;
