@@ -10,20 +10,23 @@
         <script src="scripts.js"></script>
     </head>
     <body>
-        <header>
+        <header id="header">
+        <section class="left">
             <h1><strong>Amélie</strong> Levasseur-Raymond</h1>
             <p>Future archiviste&nbsp;&nbsp;\\\&nbsp;&nbsp;Ancienne infographiste</p>
-            <section id="openclose">
-                <button onclick="openDetails()">Tout développer</button>
-                <button onclick="closeDetails()">Tout refermer</button>
-            </section>
-            <section id="col">
-                <p>Ajustez le nombre de colonnes&nbsp;&nbsp;
-                <button type="button" onclick="col1()">1</button>
-                <button type="button" onclick="col2()">2</button>
-                <button type="button" onclick="col3()">3</button>
-                <button type="button" onclick="col4()">4</button>
-                <button type="button" onclick="col5()">5</button>
+        </section>
+        <section class="right">
+                <p>
+                    <button onclick="openDetails()">Développer tout</button>
+                    <button onclick="closeDetails()">Fermer tout</button>
+                </p>
+            
+                <p>Changer le nombre de colonnes&nbsp;&nbsp;
+                    <button type="button" onclick="col1()">1</button>
+                    <button type="button" onclick="col2()">2</button>
+                    <button type="button" onclick="col3()">3</button>
+                    <button type="button" onclick="col4()">4</button>
+                    <button type="button" onclick="col5()">5</button>
                 </p>
             </section>
         </header>
@@ -42,7 +45,7 @@
         </section>
         
         <details class="mauvepale">
-        <summary>Apprendre<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
+        <summary>Apprendre<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
         <section class="mosaic">
         <div class="mauvepale">
             <h4>septembre 2022 à ...</h4>
@@ -96,7 +99,7 @@
 
 
         <details class="mauve">
-        <summary>Travailler<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
+        <summary>Travailler<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
         <section class="mosaic">
         <div class="beige">
             <h4>juillet 2022 à ...</h4>
@@ -106,7 +109,7 @@
 
         <div style="background-image: url(images/bg_polygone22.png);">
             
-            <p style="text-align: center;"><img src="images/icone_aaq.png"><br/><br/>
+            <p style="text-align: center;"><img src="images/icone_aaq.png" width="100%""><br/><br/>
             Membre étudiant et nouvellement diplômé de l’Association des archivistes du Québec</p>
         </div>
         
@@ -125,7 +128,7 @@
     </details>
 
         <details class="turquoise">
-            <summary>Contribuer<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
+            <summary>Contribuer<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
             <section class="mosaic">
                 <div class="carton">
                 <h4>depuis 2019</h4>
@@ -150,7 +153,7 @@
 
 
         <details class="beige">
-            <summary>Maitriser<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
+            <summary>Maitriser<span style="font-weight: normal;"> &nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\&nbsp;&nbsp;\</span></summary>
             <section class="mosaic">
                 <div class="mauvepale double">
                 <h3>Technologies</h3>

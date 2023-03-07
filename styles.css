@@ -12,8 +12,9 @@
     --doublewidth: 2 * (var(--divwidth) + 0.75%);
     --ratio: 2.0471; /* 1=0.5 , 2=2.0309 , 3=2.0471 , 4=2.0638 , 5=2.0811  */
     --base: 1vw;
+    --baseheader: 1vh;
 }
-
+/* info utiles calc() : https://css-tricks.com/a-complete-guide-to-calc-in-css/ */
 
 /* bases */
 
@@ -22,6 +23,7 @@
 }
 html {
     font-family: Roboto, sans-serif;
+    background-color: var(--beige);
 }
 
 
@@ -34,36 +36,35 @@ header {
     left: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 10vw;
-    padding: 2vw calc(5% + 0.75vw);
+    height: calc(10 * var(--baseheader));
+    padding: calc(2 * var(--baseheader)) calc(5% + 0.75vw);
     background-color: var(--mauve);
-    box-shadow: 0 0 2vw rgba(0, 0, 0, .6);
-    color: var(--white);
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: baseline;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, .6);
+    transition: top 1s;
 }
-header h1 {
-    grid-column: 1 / span 8;
-    grid-row: 1;
+
+.left {
+    float: left;
 }
-header p {
-    grid-column: 1 / span 8;
-    grid-row: 2;
+.right {
+    float: right;
+    text-align: right;
 }
-#openclose {
-    grid-column: 9 / span 4;
-    grid-row: 1 / span 1;
+
+header button {
+    cursor: pointer;
+    border: solid 1px var(--lilas);
+    border-radius: 0.25vw;
+    background-color: var(--mauve);
+    padding: calc(0.25 * var(--baseheader)) calc(0.5 * var(--baseheader));
+    color: var(--lilas);
+    font-size: calc(1.25 * var(--baseheader));
 }
-#openclose button {
-    width: 47%;
-}
-header #col {
-    grid-column: 9 / span 4;
-    grid-row: 2 / span 1;
+header button:hover {
+    background-color: var(--mauvepale);    
 }
 header + section {
-    margin-top: 10vw;
+    margin-top: calc(10 * var(--baseheader));
 }
 
 
@@ -205,21 +206,31 @@ h3 {
 }
 
 h1 {
-    font-size: calc(3 * var(--base));
+    font-size: calc(3 * var(--baseheader));
     font-weight: normal;
     text-transform: uppercase;
+    color: var(--white);
 }
 h1 strong {
     font-weight: bold;
+}
+header p {
+    color: var(--white);
+    font-size: calc(1.5 * var(--baseheader));
+}
+header .right p {
+    margin-top: calc(0.75 * var(--baseheader));
+    color: var(--lilas);
+    font-size: calc(1.25 * var(--baseheader));
 }
 h2, 
 summary {
     color: var(--white);
     text-align: left;
-    font-size: 2.5vw;
+    font-size: calc(2.5 * var(--base));
     font-weight: bold;
     text-transform: uppercase;
-    padding: 4vw 0 4vw 3.375vw;
+    padding: calc(4 * var(--base)) 0 calc(4 * var(--base)) calc(5% + 0.75vw);
     white-space: nowrap;
     overflow: hidden;
 }

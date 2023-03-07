@@ -16,7 +16,19 @@ function closeDetails() {
 }
 }
 
+// source : https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "-10vh";
+  }
+  prevScrollpos = currentScrollPos;
+} 
 
 // source : https://www.w3schools.com/css/tryit.asp?filename=trycss3_var_js
 
@@ -49,13 +61,13 @@ function col4() {
     // Set the value of variable --blue to another value (in this case "lightblue")
     r.style.setProperty('--doublewidth', '2 * (var(--divwidth) + 0.75%)'); // besoin de recopier ici pour que le calcul se refasse correctement
     r.style.setProperty('--col', '4');
-    r.style.setProperty('--ratio', '2.0638');
+    r.style.setProperty('--ratio', '2.0639');
     r.style.setProperty('--base', '0.75vw');
 }
 function col5() {
     // Set the value of variable --blue to another value (in this case "lightblue")
     r.style.setProperty('--doublewidth', '2 * (var(--divwidth) + 0.75%)'); // besoin de recopier ici pour que le calcul se refasse correctement
     r.style.setProperty('--col', '5');
-    r.style.setProperty('--ratio', '2.0811');
+    r.style.setProperty('--ratio', '2.0812');
     r.style.setProperty('--base', '0.6vw');
 }
