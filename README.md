@@ -21,6 +21,7 @@ Ma page n'est évidemment pas complétée dans son entièreté. Je me suis conte
 Il me restera à corriger les points suivants pour lesquels j'ai manqué de temps :
 
 - Reconnaître automatiquement la largeur de l'écran et appliquer le bon nombre de colonnes dès le départ.
+- Ajuster les styles des blocs doubles (*Technologies* entre autres) quand sur une grille d'une seule colonne, puisque le bloc devient double verticalement au lieu d'horizontalement.
 - Ajuster les éléments de l'en-tête un par-dessus l'autre sur les écrans plus étroits.
-- Problème avec l'animation de l'en-tête qui semble s'inverser quand je teste sur mon iPhone et iPad.
+- Problème avec l'animation de l'en-tête qui bogue un peu sur mon iPhone et iPad.
 - Problème de grosseur de caractères de certains blocs sur iPhone et iPad.
